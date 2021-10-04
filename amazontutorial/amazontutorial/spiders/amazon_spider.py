@@ -23,6 +23,6 @@ class AmazonSpiderSpider(scrapy.Spider):
 
         yield items
         next_page ='https://www.amazon.com/s?k=last+30+days&i=stripbooks-intl-ship&page=2&crid=21GLXPZTSYM43&qid=1633170272&sprefix=last+30+%2Cstripbooks-intl-ship%2C407&ref=sr_pg_'+ str(AmazonSpiderSpider.page_number)+''
-        if AmazonSpiderSpider.page_number<=5:
+        if AmazonSpiderSpider.page_number<=100:
             AmazonSpiderSpider.page_number+=1
             yield response.follow(next_page,callback=self.parse)
