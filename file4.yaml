@@ -144,6 +144,9 @@ product:
         - instanceEndPoint: https://ad02-tmsdev-TMS-svc-ts12-jdaalb.jdadelivers.com:8080/tm/api/v1
           realm: neste-prod0
           realmId: 12345ABC
+        - instanceEndPoint: https://ad02-tmsdev-TMS-svc-ts12-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: puma-prod
+          realmId: 12345ABC
       tst:
         singleTenant:
         - instanceEndPoint: https://ad02-tmsdev-TMS-svc-ts12-jdaalb.jdadelivers.com:8080/tm/api/v1
