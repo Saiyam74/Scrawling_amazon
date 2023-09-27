@@ -1,120 +1,107 @@
 product:
-  name: tms
   api:
-    name: shipment
-    version: v1
-    uri: tm/shipment 
     byapimEnv:
-      dev: 
+      dev:
         singleTenant:
-          - realm: by-realm
-            realmId: 5c335b18-b076-4c1b-bbe1-3aefe66a01ba
-            instanceEndPoint: https://ad02-tmsdev-TMS-svc-ts12-jdaalb.jdadelivers.com:8080/tm/api/v1
-      
-      tst:
-        singleTenant:
-          - realm: by-realm
-            realmId: 5c335bfg
-            instanceEndPoint: https://ad02-tmsdev-TMS-svc-ts12-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: by-realm-2
-            realmId: 56c922fg
-            instanceEndPoint: https://ad02-tmsdev-TMS-svc-ts5-jdaalb.jdadelivers.com:8080/tm/api/v1
-      
+        - instanceEndPoint: https://ad02-tmsdev-TMS-svc-ts12-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: by-realm
+          realmId: 5c335b18-b076-4c1b-bbe1-3aefe66a01ba
       prd:
         singleTenant:
-          # Tyson
-          - realm: tyson-dev
-            realmId: 5f5627fg
-            instanceEndPoint: https://lb-tys-tms-restlb1-dv1-ilb.jdadelivers.com:8080/tm/api/v1
-          
-          # Presales
-          - realm: by-ds-demo01
-            realmId: f15bf4fg
-            instanceEndPoint: https://da01-demo-TMS-svc-dv1-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: by-ds-demo02
-            realmId: afb6ccfg
-            instanceEndPoint: https://da01-demo-TMS-svc-ts1-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: by-ds-demo03
-            realmId: f2ec49fg
-            instanceEndPoint: https://da01-demo-TMS-svc-ts2-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: by-ds-demo04
-            realmId: 63121cfg
-            instanceEndPoint: https://da01-demo-TMS-svc-pr1-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: by-ds-demo05
-            realmId: 068a3efg
-            instanceEndPoint: https://da01-demo-TMS-svc-pr3-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: by-ds-demo06
-            realmId: 0bae19fg
-            instanceEndPoint: https://da01-demo-TMS-svc-pr4-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: by-ds-demo07
-            realmId: 2b9039fg
-            instanceEndPoint: https://da01-demo-TMS-svc-pr5-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: by-ds-demo100
-            realmId: 6a1ac0fg
-            instanceEndPoint: https://da01-demo-TMS-svc-pr2-jdaalb.jdadelivers.com:8080/tm/api/v1
-          
-          # Sunbelt
-          - realm: sunbelt-dev
-            realmId: 8c649afg
-            instanceEndPoint: https://bc78-sbr-TMS-svc-dv2-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: sunbelt-qa
-            realmId: 6cb452fg
-            instanceEndPoint: https://bc78-sbr-TMS-svc-ts4-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: sunbelt-perf
-            realmId: 93ed98fg
-            instanceEndPoint: https://bc78-sbr-TMS-svc-ts5-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: sunbelt-uat
-            realmId: a290a7fg
-            instanceEndPoint: https://bc78-sbr-TMS-svc-ts6-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: sunbelt-prod
-            realmId: e2ebe4fg
-            instanceEndPoint: https://bc78-sbr-TMS-svc-pr2-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: sunbelt-perf2
-            realmId: c5e7c3fg
-            instanceEndPoint: https://bc78-sbr-TMS-svc-ts8-jdaalb.jdadelivers.com:8080/tm/api/v1
-
+        - instanceEndPoint: https://lb-tys-tms-restlb1-dv1-ilb.jdadelivers.com:8080/tm/api/v1
+          realm: tyson-dev
+          realmId: 5f5627fg
+        - instanceEndPoint: https://da01-demo-TMS-svc-dv1-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: by-ds-demo01
+          realmId: f15bf4fg
+        - instanceEndPoint: https://da01-demo-TMS-svc-ts1-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: by-ds-demo02
+          realmId: afb6ccfg
+        - instanceEndPoint: https://da01-demo-TMS-svc-ts2-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: by-ds-demo03
+          realmId: f2ec49fg
+        - instanceEndPoint: https://da01-demo-TMS-svc-pr1-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: by-ds-demo04
+          realmId: 63121cfg
+        - instanceEndPoint: https://da01-demo-TMS-svc-pr3-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: by-ds-demo05
+          realmId: 068a3efg
+        - instanceEndPoint: https://da01-demo-TMS-svc-pr4-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: by-ds-demo06
+          realmId: 0bae19fg
+        - instanceEndPoint: https://da01-demo-TMS-svc-pr5-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: by-ds-demo07
+          realmId: 2b9039fg
+        - instanceEndPoint: https://da01-demo-TMS-svc-pr2-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: by-ds-demo100
+          realmId: 6a1ac0fg
+        - instanceEndPoint: https://bc78-sbr-TMS-svc-dv2-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: sunbelt-dev
+          realmId: 8c649afg
+        - instanceEndPoint: https://bc78-sbr-TMS-svc-ts4-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: sunbelt-qa
+          realmId: 6cb452fg
+        - instanceEndPoint: https://bc78-sbr-TMS-svc-ts5-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: sunbelt-perf
+          realmId: 93ed98fg
+        - instanceEndPoint: https://bc78-sbr-TMS-svc-ts6-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: sunbelt-uat
+          realmId: a290a7fg
+        - instanceEndPoint: https://bc78-sbr-TMS-svc-pr2-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: sunbelt-prod
+          realmId: e2ebe4fg
+        - instanceEndPoint: https://bc78-sbr-TMS-svc-ts8-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: sunbelt-perf2
+          realmId: c5e7c3fg
       prd_apac:
         singleTenant:
-          # Tata Steel
-          - realm: tsl-dev
-            realmId: 20c613fg
-            instanceEndPoint: https://be47-tata-TMS-svc-dv1-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: tsl-test
-            realmId: b5c949fg
-            instanceEndPoint: https://be47-tata-TMS-svc-ts1-jdaalb.jdadelivers.com:8080/tm/api/v1
-          
-          # Dalmia cement bharat limited.
-          - realm: dcb-test
-            realmId: 69460cfg
-            instanceEndPoint: https://be87-dcb-TMS-svc-ts1-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: dcb-prod
-            realmId: 1a6023fg
-            instanceEndPoint: https://be87-dcb-TMS-svc-pr1-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: dcb-test2
-            realmId: 266df8fg
-            instanceEndPoint: https://be87-dcb-TMS-svc-ts2-jdaalb.jdadelivers.com:8080/tm/api/v1
-          
-          
+        - instanceEndPoint: https://be47-tata-TMS-svc-dv1-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: tsl-dev
+          realmId: 20c613fg
+        - instanceEndPoint: https://be47-tata-TMS-svc-ts1-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: tsl-test
+          realmId: b5c949fg
+        - instanceEndPoint: https://be87-dcb-TMS-svc-ts1-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: dcb-test
+          realmId: 69460cfg
+        - instanceEndPoint: https://be87-dcb-TMS-svc-pr1-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: dcb-prod
+          realmId: 1a6023fg
+        - instanceEndPoint: https://be87-dcb-TMS-svc-ts2-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: dcb-test2
+          realmId: 266df8fg
       prd_eu:
         singleTenant:
-          # Neste
-          - realm: neste-dev
-            realmId: 04a92cfg
-            instanceEndPoint: https://bd13-nest-TMS-svc-dv1-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: neste-test
-            realmId: e34e7bfg
-            instanceEndPoint: https://bd13-nest-TMS-svc-ts1-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: neste-prod
-            realmId: eff855fg
-            instanceEndPoint: https://bd13-nest-TMS-svc-pr1-jdaalb.jdadelivers.com:8080/tm/api/v1
-          
-          # Nike
-          - realm: nike-test
-            realmId: bfd73ffg
-            instanceEndPoint: https://be71-nike-TMS-svc-ts1-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: nike-dev
-            realmId: 747049fg
-            instanceEndPoint: https://be71-nike-TMS-svc-dv1-jdaalb.jdadelivers.com:8080/tm/api/v1
-          - realm: nike-test2
-            realmId: 443a94fg
-            instanceEndPoint: https://be71-nike-TMS-svc-ts2-jdaalb.jdadelivers.com:8080/tm/api/v1
+        - instanceEndPoint: https://bd13-nest-TMS-svc-dv1-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: neste-dev
+          realmId: 04a92cfg
+        - instanceEndPoint: https://bd13-nest-TMS-svc-ts1-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: neste-test
+          realmId: e34e7bfg
+        - instanceEndPoint: https://bd13-nest-TMS-svc-pr1-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: neste-prod
+          realmId: eff855fg
+        - instanceEndPoint: https://be71-nike-TMS-svc-ts1-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: nike-test
+          realmId: bfd73ffg
+        - instanceEndPoint: https://be71-nike-TMS-svc-dv1-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: nike-dev
+          realmId: 747049fg
+        - instanceEndPoint: https://be71-nike-TMS-svc-ts2-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: nike-test2
+          realmId: 443a94fg
+        - instanceEndPoint: https://ad02-tmsdev-TMS-svc-ts12-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: puma-prod
+          realmId: 12345ABC
+      tst:
+        singleTenant:
+        - instanceEndPoint: https://ad02-tmsdev-TMS-svc-ts12-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: by-realm
+          realmId: 5c335bfg
+        - instanceEndPoint: https://ad02-tmsdev-TMS-svc-ts5-jdaalb.jdadelivers.com:8080/tm/api/v1
+          realm: by-realm-2
+          realmId: 56c922fg
+    name: shipment
+    uri: tm/shipment
+    version: v1
+  name: tms
